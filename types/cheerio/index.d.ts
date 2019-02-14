@@ -16,6 +16,7 @@ interface Cheerio {
     attr(): {[attr: string]: string};
     attr(name: string): string;
     attr(name: string, value: any): Cheerio;
+    attr(map: {[attr: string]: string}): Cheerio;
 
     data(): any;
     data(name: string): any;
